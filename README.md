@@ -1,16 +1,149 @@
-# React + Vite
+# Parise Nursery Shopping Apllication
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce plant shop built with **React** and **Redux Toolkit**.  
+This application allows users to browse categorized plants, add items to a shopping cart, and manage cart state dynamically.
 
-Currently, two official plugins are available:
+>  *“Where beauty blossoms at home!”*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+##  Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-  Browse plants grouped by category
+-  Add items to cart
+-  Real-time cart quantity badge update
+-  Prevent duplicate item additions
+-  Conditional rendering between product list and cart view
+-  Centralized state management using Redux Toolkit
+-  Dynamic quantity calculation using `reduce()`
+-  Modern card-based UI design
+-  Hover animations for product cards
+-  Disabled "Add to Cart" button when item already exists
+-  Fully responsive layout (Desktop, Tablet, Mobile)
+-  Component-based architecture using functional components
+-  React Hooks (`useState`, `useSelector`, `useDispatch`)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **React.js**
+- **Redux Toolkit**
+- **React-Redux**
+- **CSS3 (Custom Styling)**
+- **Functional Components & React Hooks**
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── components/
+│   ├── ProductList.js
+│   ├── CartItem.js
+│   ├── CartSlice.js
+│
+├── ProductList.css
+├── store.js
+└── App.js
+```
+
+---
+
+##  State Management
+
+The application uses **Redux Toolkit** for centralized cart state management.
+
+### Cart Logic Includes:
+
+- Add item to cart
+- Track item quantity
+- Calculate total number of items
+- Disable “Add to Cart” button when item already exists
+- Render dynamic cart badge
+
+Example:
+
+```javascript
+const totNumOfItems = cartItems.reduce(
+  (total, item) => total + item.quantity,
+  0
+);
+```
+
+---
+
+##  UI Highlights
+
+- Grid-based product layout
+- Category sections with structured spacing
+- Embedded cart badge (modern e-commerce style)
+- Card hover animation
+- Disabled button styling
+- Responsive layout:
+  - 3 columns (Desktop)
+  - 2 columns (Tablet)
+  - 1 column (Mobile)
+
+---
+
+## 🔧 Installation & Setup
+
+Clone the forked repository:
+
+```bash
+git clone https://github.com/your-username/acacia-e-plant-shop.git
+```
+
+Navigate into the project folder:
+
+```bash
+cd e-plantShopping
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev/preview
+```
+
+The app runs at:
+
+```
+http://localhost:5173
+```
+
+---
+
+##  Learning Objectives
+
+This project demonstrates:
+
+- Component-based architecture
+- Props handling
+- Conditional rendering
+- Redux global state management
+- UI responsiveness
+- Clean CSS organization
+- Real-world e-commerce logic implementation
+
+---
+
+##  Future Improvements
+
+- 🔐 User authentication
+- 💳 Checkout system
+- 🧾 Order summary page
+- 🌙 Dark mode
+- 🔍 Search & filtering
+- 🗂 Pagination
+- 🛍 Product details page
+- ☁️ Deployment (Git pages/Vercel / Netlify)

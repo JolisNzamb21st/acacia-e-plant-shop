@@ -5,13 +5,13 @@ function AboutUs() {
   return (
     <div className="about-us-container">
       {/* <h1 className="about-us-heading">About Us</h1> */}
-      <p className="about-us-description">Welcome to Paradise Nursary, where beauty blossoms at home!</p>
+      <p className="about-us-description">Welcome to Acacia-E-Plant-Shop, where beauty blossoms at home!</p>
       <p className="about-us-content">
-        Parise Nursary
+        Acacia-E-Plant
 
-        Welcome to Paradise Flowers, where beauty blossoms at home!
+        Welcome to Acacia-E-Plant & Flowers, where beauty blossoms at home!
 
-        At Parise Nursary, we believe that every home deserves the color, joy, and freshness that flowers bring. Our mission is to provide high-quality flower plants that you can grow and nurture right in your own space — whether it's a balcony, garden, window sill, or backyard.
+        At Acacia-E-Plant, we believe that every home deserves the color, joy, and freshness that flowers bring. Our mission is to provide high-quality flower plants that you can grow and nurture right in your own space — whether it's a balcony, garden, window sill, or backyard.
 
         We carefully select a wide variety of flowering plants that are perfect for home growing. From vibrant decorative blooms to fragrant favorites that brighten your mornings, our collection is designed to help you transform your living space into a peaceful floral sanctuary.
 

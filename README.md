@@ -1,4 +1,4 @@
-# Parise Nursery Shopping Apllication
+# Acacia E-Plant Shopping Apllication
 
 A modern e-commerce plant shop built with **React** and **Redux Toolkit**.  
 This application allows users to browse categorized plants, add items to a shopping cart, and manage cart state dynamically.
@@ -48,6 +48,7 @@ src/
 ├── ProductList.css
 ├── store.js
 └── App.js
+
 ```
 
 ---
@@ -61,25 +62,17 @@ The application uses **Redux Toolkit** for centralized cart state management.
 - Add item to cart
 - Track item quantity
 - Calculate total number of items
+- Add subtotal for each item
 - Disable “Add to Cart” button when item already exists
 - Render dynamic cart badge
-
-Example:
-
-```javascript
-const totNumOfItems = cartItems.reduce(
-  (total, item) => total + item.quantity,
-  0
-);
-```
 
 ---
 
 ##  UI Highlights
 
 - Grid-based product layout
-- Category sections with structured spacing
-- Embedded cart badge (modern e-commerce style)
+- Category sections 
+- Embedded cart badge 
 - Card hover animation
 - Disabled button styling
 - Responsive layout:
@@ -100,7 +93,7 @@ git clone https://github.com/your-username/acacia-e-plant-shop.git
 Navigate into the project folder:
 
 ```bash
-cd e-plantShopping
+cd acacia-e-plant-shop
 ```
 
 Install dependencies:
